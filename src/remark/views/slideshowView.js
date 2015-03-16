@@ -206,6 +206,10 @@ SlideshowView.prototype.configureChildElements = function () {
   function onPrint (e) {
     var slideHeight;
 
+    console.log("printing._pageHeight: " + printing._pageHeight);
+    console.log("self.elementArea: " + self.elementArea);
+    console.log("self.elementArea.offsetWidth: " + self.elementArea.offsetWidth);
+/*
     if (e.isPortrait) {
       slideHeight = e.pageHeight * 0.4;
     }
@@ -223,7 +227,7 @@ SlideshowView.prototype.configureChildElements = function () {
         slideView.scalingElement.style.top = '20px';
         slideView.notesElement.style.top = slideHeight + 40 + 'px';
       }
-    });
+    }); */
   }
 };
 
